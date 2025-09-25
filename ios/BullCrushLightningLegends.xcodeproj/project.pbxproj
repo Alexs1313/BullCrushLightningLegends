@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-BullCrushLightningLegends.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-BullCrushLightningLegends.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2DF90D93B7A54A80BD47CCA8 /* CrimsonText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5A732D9AFF9455EA87BF5C2 /* CrimsonText-Regular.ttf */; };
 		3AD144B9C988A81120B4B5D0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		6DD9EF8BFDCB49BCBAD7B96A /* CrimsonText-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04AE13E180D64D4D902747D0 /* CrimsonText-SemiBold.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D1505A942E8583FC007C21E1 /* bull-click-tick-menu-navigation.wav in Resources */ = {isa = PBXBuildFile; fileRef = D1505A932E8583FC007C21E1 /* bull-click-tick-menu-navigation.wav */; };
+		D1505A962E858468007C21E1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1505A952E858468007C21E1 /* AVFoundation.framework */; };
+		D1505A982E858477007C21E1 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1505A972E858477007C21E1 /* AVKit.framework */; };
+		D1505A9A2E858481007C21E1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1505A992E858481007C21E1 /* AudioToolbox.framework */; };
+		EB8EB4044A9D4D9BA04AF6DB /* CrimsonText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9AF0668F60C48E7ACC9CB68 /* CrimsonText-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04AE13E180D64D4D902747D0 /* CrimsonText-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "CrimsonText-SemiBold.ttf"; path = "../assets/fonts/CrimsonText-SemiBold.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* BullCrushLightningLegends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullCrushLightningLegends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BullCrushLightningLegends/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BullCrushLightningLegends/Info.plist; sourceTree = "<group>"; };
@@ -24,7 +32,13 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-BullCrushLightningLegends.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BullCrushLightningLegends.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = BullCrushLightningLegends/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BullCrushLightningLegends/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1505A932E8583FC007C21E1 /* bull-click-tick-menu-navigation.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "bull-click-tick-menu-navigation.wav"; sourceTree = "<group>"; };
+		D1505A952E858468007C21E1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D1505A972E858477007C21E1 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		D1505A992E858481007C21E1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E9AF0668F60C48E7ACC9CB68 /* CrimsonText-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "CrimsonText-Bold.ttf"; path = "../assets/fonts/CrimsonText-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F5A732D9AFF9455EA87BF5C2 /* CrimsonText-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "CrimsonText-Regular.ttf"; path = "../assets/fonts/CrimsonText-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1505A9A2E858481007C21E1 /* AudioToolbox.framework in Frameworks */,
+				D1505A982E858477007C21E1 /* AVKit.framework in Frameworks */,
+				D1505A962E858468007C21E1 /* AVFoundation.framework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-BullCrushLightningLegends.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +71,9 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1505A992E858481007C21E1 /* AudioToolbox.framework */,
+				D1505A972E858477007C21E1 /* AVKit.framework */,
+				D1505A952E858468007C21E1 /* AVFoundation.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-BullCrushLightningLegends.a */,
 			);
@@ -75,6 +95,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				BB7209F7417947AA86307D73 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -87,6 +108,17 @@
 				13B07F961A680F5B00A75B9A /* BullCrushLightningLegends.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BB7209F7417947AA86307D73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E9AF0668F60C48E7ACC9CB68 /* CrimsonText-Bold.ttf */,
+				F5A732D9AFF9455EA87BF5C2 /* CrimsonText-Regular.ttf */,
+				04AE13E180D64D4D902747D0 /* CrimsonText-SemiBold.ttf */,
+				D1505A932E8583FC007C21E1 /* bull-click-tick-menu-navigation.wav */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -160,7 +192,11 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				D1505A942E8583FC007C21E1 /* bull-click-tick-menu-navigation.wav in Resources */,
 				3AD144B9C988A81120B4B5D0 /* PrivacyInfo.xcprivacy in Resources */,
+				EB8EB4044A9D4D9BA04AF6DB /* CrimsonText-Bold.ttf in Resources */,
+				2DF90D93B7A54A80BD47CCA8 /* CrimsonText-Regular.ttf in Resources */,
+				6DD9EF8BFDCB49BCBAD7B96A /* CrimsonText-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
