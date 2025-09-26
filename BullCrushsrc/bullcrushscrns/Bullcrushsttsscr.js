@@ -19,7 +19,7 @@ const Bullcrushsttsscr = () => {
   const { toggleBullCrushSound, bullCrushClick } = useBullCrushContext();
 
   useEffect(() => {
-    AsyncStorage.getItem('catchredrag_scores').then(stored => {
+    AsyncStorage.getItem('bullCrushCatchRedRagScores').then(stored => {
       if (stored) setStats(JSON.parse(stored));
     });
   }, []);
