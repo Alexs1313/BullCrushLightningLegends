@@ -157,11 +157,11 @@ const styles = StyleSheet.create({
   bullcrushbtn: {
     position: 'absolute',
     left: 20,
-    top: Platform.OS === 'ios' ? 70 : 74,
+    top: Platform.OS === 'ios' ? 70 : 73,
   },
   bullcrushbtntxt: {
     fontFamily: 'CrimsonText-Bold',
-    fontSize: 48,
+    fontSize: 42,
     color: '#011D92',
     top: -3,
   },

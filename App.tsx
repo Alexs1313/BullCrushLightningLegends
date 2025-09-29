@@ -1,5 +1,4 @@
 import { NavigationContainer } from '@react-navigation/native';
-
 import { useEffect as partoUseEffect, useState as partoUseState } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import Bullcrushentrscr from './BullCrushsrc/bullcrushscrns/Bullcrushentrscr';

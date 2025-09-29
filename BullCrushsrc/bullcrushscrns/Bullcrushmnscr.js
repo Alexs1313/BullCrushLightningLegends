@@ -5,14 +5,13 @@ import {
   Platform,
   ScrollView,
   StyleSheet,
-  Text,
   TouchableOpacity,
   View,
 } from 'react-native';
 import { Bullcrushtxt } from '../bullcrushcmpnts/Bullcrushtxt';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useBullCrushContext } from '../bullcrushstr/bullcrushcntx';
-import { useCallback, useEffect, useRef } from 'react';
+import { useCallback } from 'react';
 import Sound from 'react-native-sound';
 
 Sound.setCategory('Playback');
@@ -70,6 +69,7 @@ const Bullcrushmnscr = () => {
       >
         <View style={{ marginTop: 213, marginBottom: 40 }}>
           <TouchableOpacity
+            style={{ zIndex: 10 }}
             activeOpacity={0.7}
             onPress={() => {
               bullcrushnavigate.navigate('Bullcrushgmplscr');
@@ -92,6 +92,7 @@ const Bullcrushmnscr = () => {
           </TouchableOpacity>
           <TouchableOpacity
             activeOpacity={0.7}
+            style={{ zIndex: 10 }}
             onPress={() => {
               bullcrushnavigate.navigate('Bullcrushsttsscr');
               if (toggleBullCrushSound) {
@@ -119,6 +120,7 @@ const Bullcrushmnscr = () => {
           >
             <TouchableOpacity
               activeOpacity={0.7}
+              style={{ zIndex: 10 }}
               onPress={() => {
                 bullcrushnavigate.navigate('Bullcrushsettscr');
                 if (toggleBullCrushSound) {
@@ -132,6 +134,7 @@ const Bullcrushmnscr = () => {
             </TouchableOpacity>
             <TouchableOpacity
               activeOpacity={0.7}
+              style={{ zIndex: 10 }}
               onPress={() => {
                 bullcrushnavigate.navigate('Bullcrushinfscr');
                 if (toggleBullCrushSound) {
@@ -158,7 +161,6 @@ const styles = StyleSheet.create({
     width: 195,
     height: 73,
     alignItems: 'center',
-    justifyContent: 'center',
     alignSelf: 'center',
     marginBottom: 17,
   },
@@ -166,7 +168,7 @@ const styles = StyleSheet.create({
     fontFamily: 'CrimsonText-Bold',
     fontSize: 48,
     color: '#011D92',
-    top: Platform.OS === 'android' ? -3 : 0,
+    top: Platform.OS === 'android' ? -4 : 4,
   },
 });
 

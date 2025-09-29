@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
     fontFamily: 'CrimsonText-Bold',
     fontSize: 48,
     color: '#011D92',
-    top: Platform.OS === 'android' ? -3 : 0,
+    top: Platform.OS === 'android' ? -4 : 0,
   },
   bullcrushdot: {
     width: 20,

@@ -110,17 +110,20 @@ const Bullcrushsttsscr = () => {
 };
 
 const styles = StyleSheet.create({
-  bullcrushcnt: { paddingTop: 60, alignItems: 'center', padding: 20 },
+  bullcrushcnt: {
+    paddingTop: 60,
+    alignItems: 'center',
+    padding: 20,
+  },
   bullcrushbtn: {
     position: 'absolute',
     left: 20,
-    top: Platform.OS === 'ios' ? 70 : 74,
+    top: Platform.OS === 'ios' ? 70 : 75,
   },
   bullcrushbtntxt: {
     fontFamily: 'CrimsonText-Bold',
-    fontSize: 48,
+    fontSize: 42,
     color: '#011D92',
-    top: -3,
   },
   bullcrushttl: {
     fontFamily: 'CrimsonText-Bold',

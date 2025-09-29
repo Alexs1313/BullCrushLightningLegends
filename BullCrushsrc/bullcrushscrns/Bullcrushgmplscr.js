@@ -15,7 +15,6 @@ import {
   Platform,
   TouchableWithoutFeedback,
   Animated,
-  StatusBar,
 } from 'react-native';
 import Orientation from 'react-native-orientation-locker';
 
