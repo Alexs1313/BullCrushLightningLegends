@@ -1,14 +1,14 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { useEffect as partoUseEffect, useState as partoUseState } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import Bullcrushentrscr from './BullCrushsrc/bullcrushscrns/Bullcrushentrscr';
-import Bullcrushwlcldr from './BullCrushsrc/bullcrushcmpnts/Bullcrushwlcldr';
-import Bullcrushmnscr from './BullCrushsrc/bullcrushscrns/Bullcrushmnscr';
-import Bullcrushsttsscr from './BullCrushsrc/bullcrushscrns/Bullcrushsttsscr';
-import Bullcrushgmplscr from './BullCrushsrc/bullcrushscrns/Bullcrushgmplscr';
-import { BullCrushAppContextProvider } from './BullCrushsrc/bullcrushstr/bullcrushcntx';
-import Bullcrushsettscr from './BullCrushsrc/bullcrushscrns/Bullcrushsettscr';
-import Bullcrushinfscr from './BullCrushsrc/bullcrushscrns/Bullcrushinfscr';
+import Bullcrushentrscr from './BullCrushLightningLegends/bullcrushscrns/Bullcrushentrscr';
+import Bullcrushwlcldr from './BullCrushLightningLegends/bullcrushcmpnts/Bullcrushwlcldr';
+import Bullcrushmnscr from './BullCrushLightningLegends/bullcrushscrns/Bullcrushmnscr';
+import Bullcrushsttsscr from './BullCrushLightningLegends/bullcrushscrns/Bullcrushsttsscr';
+import Bullcrushgmplscr from './BullCrushLightningLegends/bullcrushscrns/Bullcrushgmplscr';
+import { BullCrushAppContextProvider } from './BullCrushLightningLegends/bullcrushstr/bullcrushcntx';
+import Bullcrushsettscr from './BullCrushLightningLegends/bullcrushscrns/Bullcrushsettscr';
+import Bullcrushinfscr from './BullCrushLightningLegends/bullcrushscrns/Bullcrushinfscr';
 
 const BullCrushNavigation = createStackNavigator();
 
@@ -30,8 +30,8 @@ const App = () => {
         ) : (
           <BullCrushNavigation.Navigator screenOptions={{ headerShown: false }}>
             <BullCrushNavigation.Screen
-              name="Bullcrushentrscr"
-              component={Bullcrushentrscr}
+              name="Bulcrushentrscr"
+              component={Bulcrushentrscr}
             />
             <BullCrushNavigation.Screen
               name="Bullcrushmnscr"
