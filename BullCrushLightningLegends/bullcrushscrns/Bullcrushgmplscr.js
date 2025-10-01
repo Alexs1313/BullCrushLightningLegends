@@ -193,6 +193,7 @@ export default function Bullcrushgmplscr() {
         bullCrushNewScore > (bullCrushStats[0] ?? 0)
       ) {
         setBullCrushShowRecordModal(true);
+        bullCrushFinishGame(false, bullCrushNewScore);
       }
       if (bullCrushNewScore % 10 === 0) setBullCrushShowLightning(true);
       if (bullCrushNewScore === 50)
