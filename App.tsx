@@ -1,14 +1,14 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { useEffect as partoUseEffect, useState as partoUseState } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import Bullcrushentrscr from './BullCrushLightningLegends/bullcrushscrns/Bullcrushentrscr';
-import Bullcrushwlcldr from './BullCrushLightningLegends/bullcrushcmpnts/Bullcrushwlcldr';
-import Bullcrushmnscr from './BullCrushLightningLegends/bullcrushscrns/Bullcrushmnscr';
-import Bullcrushsttsscr from './BullCrushLightningLegends/bullcrushscrns/Bullcrushsttsscr';
-import Bullcrushgmplscr from './BullCrushLightningLegends/bullcrushscrns/Bullcrushgmplscr';
-import { BullCrushAppContextProvider } from './BullCrushLightningLegends/bullcrushstr/bullcrushcntx';
-import Bullcrushsettscr from './BullCrushLightningLegends/bullcrushscrns/Bullcrushsettscr';
-import Bullcrushinfscr from './BullCrushLightningLegends/bullcrushscrns/Bullcrushinfscr';
+import Bullcrushentrscr from './src/bullcrushscrns/Bullcrushentrscr';
+import Bullcrushwlcldr from './src/bullcrushcmpnts/Bullcrushwlcldr';
+import Bullcrushmnscr from './src/bullcrushscrns/Bullcrushmnscr';
+import Bullcrushsttsscr from './src/bullcrushscrns/Bullcrushsttsscr';
+import Bullcrushgmplscr from './src/bullcrushscrns/Bullcrushgmplscr';
+import { BullCrushAppContextProvider } from './src/bullcrushstr/bullcrushcntx';
+import Bullcrushsettscr from './src/bullcrushscrns/Bullcrushsettscr';
+import Bullcrushinfscr from './src/bullcrushscrns/Bullcrushinfscr';
 
 const BullCrushNavigation = createStackNavigator();
 
