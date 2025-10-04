@@ -72,27 +72,22 @@ const Bullcrushinfscr = () => {
           contentContainerStyle={{ flexGrow: 1 }}
           showsVerticalScrollIndicator={false}
         >
-          <View style={styles.bullcrushcnt}>
-            <TouchableOpacity
-              activeOpacity={0.7}
-              style={styles.bullcrushbtn}
-              onPress={() => {
-                bullcrushnavigate.goBack();
-                if (toggleBullCrushSound) {
-                  bullCrushClick();
-                }
-              }}
-            >
-              <Image
-                source={require('../../assets/images/bullcrushbckbtn.png')}
-              />
-            </TouchableOpacity>
-
-            <Bullcrushtxt
-              royalCourtPropsTxt={'FACTS'}
-              style={styles.bullcrushbtntxt}
-              bullcrushPropClrs={['#FFE106', '#E99500']}
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={styles.bullcrushbtn}
+            onPress={() => {
+              bullcrushnavigate.goBack();
+              if (toggleBullCrushSound) {
+                bullCrushClick();
+              }
+            }}
+          >
+            <Image
+              source={require('../../assets/images/bullcrushbckbtn.png')}
             />
+          </TouchableOpacity>
+          <View style={styles.bullcrushcnt}>
+            <Image source={require('../../assets/images/bullcrushfacts.png')} />
           </View>
           <View
             style={{
@@ -149,7 +144,7 @@ const styles = StyleSheet.create({
   bullcrushbtn: {
     position: 'absolute',
     left: 20,
-    top: Platform.OS === 'ios' ? 70 : 74,
+    top: 60,
   },
   bullcrushbtntxt: {
     fontFamily: 'CrimsonText-Bold',
@@ -164,15 +159,15 @@ const styles = StyleSheet.create({
   },
   bullcrushfctcnt: {
     width: 315,
-    minHeight: 315,
+    height: 315,
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 20,
-    paddingHorizontal: 30,
+    padding: 10,
+    paddingHorizontal: 18,
   },
   bullcrushfcttxt: {
     fontFamily: 'CrimsonText-Bold',
-    fontSize: 24,
+    fontSize: 18,
     color: '#fff',
     textAlign: 'center',
   },

@@ -55,11 +55,7 @@ const Bullcrushsttsscr = () => {
               />
             </TouchableOpacity>
 
-            <Bullcrushtxt
-              royalCourtPropsTxt={'STATS'}
-              style={styles.bullcrushbtntxt}
-              bullcrushPropClrs={['#FFE106', '#E99500']}
-            />
+            <Image source={require('../../assets/images/bullcrushstats.png')} />
 
             {stats.length === 0 && (
               <View style={{ marginTop: 230, alignItems: 'center' }}>
@@ -75,6 +71,7 @@ const Bullcrushsttsscr = () => {
                 flexWrap: 'wrap',
                 gap: 20,
                 justifyContent: 'center',
+                marginTop: 20,
               }}
             >
               {stats.map((s, i) => (
@@ -118,7 +115,7 @@ const styles = StyleSheet.create({
   bullcrushbtn: {
     position: 'absolute',
     left: 20,
-    top: Platform.OS === 'ios' ? 70 : 75,
+    top: 60,
   },
   bullcrushbtntxt: {
     fontFamily: 'CrimsonText-Bold',

@@ -22,7 +22,6 @@ const { width: bullCrushWidth, height: bullCrushHeight } =
   Dimensions.get('window');
 const bullCrushItemSize = 68;
 const bullCrushHeartsTotal = 3;
-const bullCrushFallSpeed = 4;
 const bullCrushMinRags = 1;
 const bullCrushMaxRags = 4;
 
@@ -146,10 +145,11 @@ export default function Bullcrushgmplscr() {
   });
 
   const bullCrushGameStep = () => {
+    const speed = 4 + Math.floor(bullCrushScore / 10);
     setBullCrushRags(prevBullCrushRags => {
       let bullCrushMoved = prevBullCrushRags.map(bullCrushRag => ({
         ...bullCrushRag,
-        y: bullCrushRag.y + bullCrushFallSpeed,
+        y: bullCrushRag.y + speed,
       }));
       let bullCrushFiltered = bullCrushMoved.filter(
         bullCrushRag => bullCrushRag.y < bullCrushHeight,
@@ -187,15 +187,25 @@ export default function Bullcrushgmplscr() {
     );
     if (bullCrushRag.bullCrushColor === 'bullCrushRed') {
       const bullCrushNewScore = bullCrushScore + 1;
-      setBullCrushScore(bullCrushNewScore);
+
       if (
-        bullCrushNewScore % 10 === 0 &&
+        bullCrushNewScore % 5 === 0 &&
         bullCrushNewScore > (bullCrushStats[0] ?? 0)
       ) {
+        const bullCrushNewStats = [bullCrushNewScore, ...bullCrushStats]
+          .sort((a, b) => b - a)
+          .slice(0, 4);
+        setBullCrushStats(bullCrushNewStats);
+        AsyncStorage.setItem(
+          'bullCrushCatchRedRagScores',
+          JSON.stringify(bullCrushNewStats),
+        );
+        setBullCrushScore(bullCrushNewScore);
         setBullCrushShowRecordModal(true);
-        bullCrushFinishGame(false, bullCrushNewScore);
+        return;
       }
-      if (bullCrushNewScore % 10 === 0) setBullCrushShowLightning(true);
+      setBullCrushScore(bullCrushNewScore);
+      if (bullCrushNewScore % 5 === 0) setBullCrushShowLightning(true);
       if (bullCrushNewScore === 50)
         bullCrushFinishGame(true, bullCrushNewScore);
     } else {

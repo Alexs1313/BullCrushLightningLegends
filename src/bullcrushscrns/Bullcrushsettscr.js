@@ -57,32 +57,28 @@ const Bullcrushsettscr = () => {
           contentContainerStyle={{ flexGrow: 1 }}
           showsVerticalScrollIndicator={false}
         >
-          <View style={styles.bullcrushcnt}>
-            <TouchableOpacity
-              activeOpacity={0.7}
-              style={styles.bullcrushbtn}
-              onPress={() => {
-                bullcrushnavigate.goBack();
-                if (toggleBullCrushSound) {
-                  bullCrushClick();
-                }
-              }}
-            >
-              <Image
-                source={require('../../assets/images/bullcrushbckbtn.png')}
-              />
-            </TouchableOpacity>
-
-            <Bullcrushtxt
-              royalCourtPropsTxt={'SETTINGS'}
-              style={styles.bullcrushbtntxt}
-              bullcrushPropClrs={['#FFE106', '#E99500']}
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={styles.bullcrushbtn}
+            onPress={() => {
+              bullcrushnavigate.goBack();
+              if (toggleBullCrushSound) {
+                bullCrushClick();
+              }
+            }}
+          >
+            <Image
+              source={require('../../assets/images/bullcrushbckbtn.png')}
             />
+          </TouchableOpacity>
+          <View style={styles.bullcrushcnt}>
+            <Image source={require('../../assets/images/bullcrushsettg.png')} />
           </View>
           <View
             style={{
               paddingHorizontal: 40,
               marginBottom: 20,
+              marginTop: 20,
             }}
           >
             <View
@@ -157,7 +153,7 @@ const styles = StyleSheet.create({
   bullcrushbtn: {
     position: 'absolute',
     left: 20,
-    top: Platform.OS === 'ios' ? 70 : 73,
+    top: 60,
   },
   bullcrushbtntxt: {
     fontFamily: 'CrimsonText-Bold',

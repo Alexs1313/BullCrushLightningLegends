@@ -64,12 +64,14 @@ const Bullcrushmnscr = () => {
       style={{ flex: 1 }}
     >
       <ScrollView
-        contentContainerStyle={{ flex: 1 }}
+        contentContainerStyle={{ flexGrow: 1 }}
         showsVerticalScrollIndicator={false}
       >
-        <View style={{ marginTop: 213, marginBottom: 40 }}>
+        <View
+          style={{ marginTop: 213, marginBottom: 40, alignItems: 'center' }}
+        >
           <TouchableOpacity
-            style={{ zIndex: 10 }}
+            style={{ zIndex: 10, marginBottom: 10 }}
             activeOpacity={0.7}
             onPress={() => {
               bullcrushnavigate.navigate('Bullcrushgmplscr');
@@ -79,20 +81,11 @@ const Bullcrushmnscr = () => {
               }
             }}
           >
-            <ImageBackground
-              style={styles.bullcrushbtn}
-              source={require('../../assets/images/bullcrushbtn.png')}
-            >
-              <Bullcrushtxt
-                royalCourtPropsTxt={'PLAY'}
-                style={styles.bullcrushbtntxt}
-                bullcrushPropClrs={['#0D3DC5', '#011D92']}
-              />
-            </ImageBackground>
+            <Image source={require('../../assets/images/bullcrushpl.png')} />
           </TouchableOpacity>
           <TouchableOpacity
             activeOpacity={0.7}
-            style={{ zIndex: 10 }}
+            style={{ zIndex: 10, marginBottom: 10 }}
             onPress={() => {
               bullcrushnavigate.navigate('Bullcrushsttsscr');
               if (toggleBullCrushSound) {
@@ -100,16 +93,7 @@ const Bullcrushmnscr = () => {
               }
             }}
           >
-            <ImageBackground
-              style={styles.bullcrushbtn}
-              source={require('../../assets/images/bullcrushbtnsec.png')}
-            >
-              <Bullcrushtxt
-                royalCourtPropsTxt={'STATS'}
-                style={styles.bullcrushbtntxt}
-                bullcrushPropClrs={['#FFE106', '#E99500']}
-              />
-            </ImageBackground>
+            <Image source={require('../../assets/images/bullcrushst.png')} />
           </TouchableOpacity>
 
           <View

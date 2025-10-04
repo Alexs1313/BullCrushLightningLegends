@@ -9,7 +9,6 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { Bullcrushtxt } from '../bullcrushcmpnts/Bullcrushtxt';
 import { useBullCrushContext } from '../bullcrushstr/bullcrushcntx';
 import Sound from 'react-native-sound';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -76,7 +75,15 @@ const Bullcrushentrscr = () => {
         </ImageBackground>
       </ScrollView>
 
-      <View style={{ position: 'absolute', bottom: 40, width: '100%' }}>
+      <View
+        style={{
+          position: 'absolute',
+          bottom: 40,
+          width: '100%',
+          alignItems: 'center',
+          gap: 10,
+        }}
+      >
         <TouchableOpacity
           activeOpacity={0.7}
           onPress={() => {
@@ -91,16 +98,15 @@ const Bullcrushentrscr = () => {
             }
           }}
         >
-          <ImageBackground
-            style={styles.bullcrushbtn}
-            source={require('../../assets/images/bullcrushbtn.png')}
-          >
-            <Bullcrushtxt
-              royalCourtPropsTxt={'NEXT'}
-              style={styles.bullcrushbtntxt}
-              bullcrushPropClrs={['#0D3DC5', '#011D92']}
-            />
-          </ImageBackground>
+          {currBullCrushBrd === 0 && (
+            <Image source={require('../../assets/images/bullcrushnxt.png')} />
+          )}
+          {currBullCrushBrd === 1 && (
+            <Image source={require('../../assets/images/bullcrushnxt.png')} />
+          )}
+          {currBullCrushBrd === 2 && (
+            <Image source={require('../../assets/images/bullcrushpl.png')} />
+          )}
         </TouchableOpacity>
 
         <View
