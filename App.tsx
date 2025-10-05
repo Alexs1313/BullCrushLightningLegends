@@ -30,8 +30,8 @@ const App = () => {
         ) : (
           <BullCrushNavigation.Navigator screenOptions={{ headerShown: false }}>
             <BullCrushNavigation.Screen
-              name="Bullcrushentrsc"
-              component={Bullcrushentrsc}
+              name="Bullcrushentrscr"
+              component={Bullcrushentrscr}
             />
             <BullCrushNavigation.Screen
               name="Bullcrushmnscr"
