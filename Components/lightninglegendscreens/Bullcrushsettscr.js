@@ -1,7 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
-import { Bullcrushtxt } from '../bullcrushcmpnts/Bullcrushtxt';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useBullCrushContext } from '../bullcrushstr/bullcrushcntx';
+import { useBullCrushContext } from '../lightninglegendstore/bullcrushcntx';
 import {
   Image,
   ImageBackground,

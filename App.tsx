@@ -1,22 +1,22 @@
+import Bullcrushentrscr from './Components/lightninglegendscreens/Bullcrushentrscr';
+import Bullcrushwlcldr from './Components/lightninglegendscomponents/Bullcrushwlcldr';
+import Bullcrushmnscr from './Components/lightninglegendscreens/Bullcrushmnscr';
+import Bullcrushsttsscr from './Components/lightninglegendscreens/Bullcrushsttsscr';
+import Bullcrushgmplscr from './Components/lightninglegendscreens/Bullcrushgmplscr';
+import { BullCrushAppContextProvider } from './Components/lightninglegendstore/bullcrushcntx';
+import Bullcrushsettscr from './Components/lightninglegendscreens/Bullcrushsettscr';
+import Bullcrushinfscr from './Components/lightninglegendscreens/Bullcrushinfscr';
 import { NavigationContainer } from '@react-navigation/native';
-import { useEffect as partoUseEffect, useState as partoUseState } from 'react';
+import { useEffect, useState } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import Bullcrushentrscr from './src/bullcrushscrns/Bullcrushentrscr';
-import Bullcrushwlcldr from './src/bullcrushcmpnts/Bullcrushwlcldr';
-import Bullcrushmnscr from './src/bullcrushscrns/Bullcrushmnscr';
-import Bullcrushsttsscr from './src/bullcrushscrns/Bullcrushsttsscr';
-import Bullcrushgmplscr from './src/bullcrushscrns/Bullcrushgmplscr';
-import { BullCrushAppContextProvider } from './src/bullcrushstr/bullcrushcntx';
-import Bullcrushsettscr from './src/bullcrushscrns/Bullcrushsettscr';
-import Bullcrushinfscr from './src/bullcrushscrns/Bullcrushinfscr';
 
 const BullCrushNavigation = createStackNavigator();
 
 const App = () => {
   const [wlcBullCrushLightningScr, setWlcBullCrushLightningScr] =
-    partoUseState(false);
+    useState(false);
 
-  partoUseEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       setWlcBullCrushLightningScr(true);
     }, 5000);
@@ -30,8 +30,8 @@ const App = () => {
         ) : (
           <BullCrushNavigation.Navigator screenOptions={{ headerShown: false }}>
             <BullCrushNavigation.Screen
-              name="Bullcrushentrscr"
-              component={Bullcrushentrscr}
+              name="Bullcrushentrsc"
+              component={Bullcrushentrsc}
             />
             <BullCrushNavigation.Screen
               name="Bullcrushmnscr"

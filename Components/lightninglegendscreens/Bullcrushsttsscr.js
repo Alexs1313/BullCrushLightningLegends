@@ -1,9 +1,8 @@
 import { useNavigation } from '@react-navigation/native';
-import { Bullcrushtxt } from '../bullcrushcmpnts/Bullcrushtxt';
+import { Bullcrushtxt } from '../lightninglegendscomponents/Bullcrushtxt';
 import {
   Image,
   ImageBackground,
-  Platform,
   ScrollView,
   StyleSheet,
   TouchableOpacity,
@@ -11,7 +10,7 @@ import {
 } from 'react-native';
 import { useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useBullCrushContext } from '../bullcrushstr/bullcrushcntx';
+import { useBullCrushContext } from '../lightninglegendstore/bullcrushcntx';
 
 const Bullcrushsttsscr = () => {
   const bullcrushnavigate = useNavigation();

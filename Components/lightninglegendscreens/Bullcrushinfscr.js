@@ -1,10 +1,8 @@
 import { useNavigation } from '@react-navigation/native';
-import { Bullcrushtxt } from '../bullcrushcmpnts/Bullcrushtxt';
-import { useBullCrushContext } from '../bullcrushstr/bullcrushcntx';
+import { useBullCrushContext } from '../lightninglegendstore/bullcrushcntx';
 import {
   Image,
   ImageBackground,
-  Platform,
   ScrollView,
   StyleSheet,
   Text,

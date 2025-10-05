@@ -8,9 +8,8 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { Bullcrushtxt } from '../bullcrushcmpnts/Bullcrushtxt';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useBullCrushContext } from '../bullcrushstr/bullcrushcntx';
+import { useBullCrushContext } from '../lightninglegendstore/bullcrushcntx';
 import { useCallback } from 'react';
 import Sound from 'react-native-sound';
 

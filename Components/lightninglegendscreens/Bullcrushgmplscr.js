@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Bullcrushtxt } from '../bullcrushcmpnts/Bullcrushtxt';
+import { Bullcrushtxt } from '../lightninglegendscomponents/Bullcrushtxt';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
-import { useBullCrushContext } from '../bullcrushstr/bullcrushcntx';
+import { useBullCrushContext } from '../lightninglegendstore/bullcrushcntx';
 import {
   View,
   Image,
