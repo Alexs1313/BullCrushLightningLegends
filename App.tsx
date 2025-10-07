@@ -26,7 +26,7 @@ const App = () => {
     <NavigationContainer>
       <BullCrushAppContextProvider>
         {!wlcBullCrushLightningScr ? (
-          <Bullcrushwlcldr />
+          <Bullcrushwlcld />
         ) : (
           <BullCrushNavigation.Navigator screenOptions={{ headerShown: false }}>
             <BullCrushNavigation.Screen
