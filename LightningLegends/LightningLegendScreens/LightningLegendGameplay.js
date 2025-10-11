@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Bullcrushtxt } from '../lightninglegendscomponents/Bullcrushtxt';
+import { Bullcrushtxt } from '../LightningLegendsComponents/Bullcrushtxt';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
-import { useBullCrushContext } from '../lightninglegendstore/bullcrushcntx';
+import { useBullCrushContext } from '../LightningLegendStore/bullcrushcntx';
 import {
   View,
   Image,
@@ -73,7 +73,7 @@ function bullCrushCreateRag(bullCrushRags) {
   };
 }
 
-export default function Bullcrushgmplscr() {
+export default function LightningLegendGameplay() {
   const [bullCrushRags, setBullCrushRags] = useState([]);
   const [bullCrushScore, setBullCrushScore] = useState(0);
   const [bullCrushHearts, setBullCrushHearts] = useState(bullCrushHeartsTotal);

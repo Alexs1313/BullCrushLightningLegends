@@ -1,5 +1,5 @@
 import { useNavigation } from '@react-navigation/native';
-import { useBullCrushContext } from '../lightninglegendstore/bullcrushcntx';
+import { useBullCrushContext } from '../LightningLegendStore/bullcrushcntx';
 import {
   Image,
   ImageBackground,

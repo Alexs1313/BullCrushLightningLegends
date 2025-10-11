@@ -1,6 +1,6 @@
-import { Image, ImageBackground, View } from 'react-native';
+import { Image, ImageBackground } from 'react-native';
 
-const Bullcrushwlcldr = () => {
+const LightningLegendLoader = () => {
   return (
     <ImageBackground
       source={require('../../assets/images/bullcrushldrbg.png')}
@@ -11,4 +11,4 @@ const Bullcrushwlcldr = () => {
   );
 };
 
-export default Bullcrushwlcldr;
+export default LightningLegendLoader;

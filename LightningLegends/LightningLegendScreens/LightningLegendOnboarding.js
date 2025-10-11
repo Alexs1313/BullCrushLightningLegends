@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { useBullCrushContext } from '../lightninglegendstore/bullcrushcntx';
+import { useBullCrushContext } from '../LightningLegendStore/bullcrushcntx';
 import Sound from 'react-native-sound';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -21,7 +21,7 @@ const bullcrushentrbg = [
 
 Sound.setCategory('Playback');
 
-const Bullcrushentrscr = () => {
+const LightningLegendOnboarding = () => {
   const [currBullCrushBrd, setCurrBullCrushBrd] = useState(0);
   const bullcrushnavigate = useNavigation();
   const { toggleBullCrushSound, bullCrushClick, setToggleBullCrushSound } =
@@ -94,7 +94,7 @@ const Bullcrushentrscr = () => {
             if (currBullCrushBrd < 2) {
               setCurrBullCrushBrd(currBullCrushBrd + 1);
             } else {
-              bullcrushnavigate.replace('Bullcrushmnscr');
+              bullcrushnavigate.replace('LightningLegendMain');
             }
           }}
         >
@@ -175,4 +175,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Bullcrushentrscr;
+export default LightningLegendOnboarding;

@@ -1,5 +1,5 @@
 import { useNavigation } from '@react-navigation/native';
-import { Bullcrushtxt } from '../lightninglegendscomponents/Bullcrushtxt';
+import { Bullcrushtxt } from '../LightningLegendsComponents/Bullcrushtxt';
 import {
   Image,
   ImageBackground,
@@ -10,9 +10,9 @@ import {
 } from 'react-native';
 import { useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useBullCrushContext } from '../lightninglegendstore/bullcrushcntx';
+import { useBullCrushContext } from '../LightningLegendStore/bullcrushcntx';
 
-const Bullcrushsttsscr = () => {
+const LightningLegendStats = () => {
   const bullcrushnavigate = useNavigation();
   const [stats, setStats] = useState([]);
   const { toggleBullCrushSound, bullCrushClick } = useBullCrushContext();
@@ -127,4 +127,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Bullcrushsttsscr;
+export default LightningLegendStats;

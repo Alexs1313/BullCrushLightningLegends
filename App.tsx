@@ -1,16 +1,16 @@
-import Bullcrushentrscr from './Components/lightninglegendscreens/Bullcrushentrscr';
-import Bullcrushwlcldr from './Components/lightninglegendscomponents/Bullcrushwlcldr';
-import Bullcrushmnscr from './Components/lightninglegendscreens/Bullcrushmnscr';
-import Bullcrushsttsscr from './Components/lightninglegendscreens/Bullcrushsttsscr';
-import Bullcrushgmplscr from './Components/lightninglegendscreens/Bullcrushgmplscr';
-import { BullCrushAppContextProvider } from './Components/lightninglegendstore/bullcrushcntx';
-import Bullcrushsettscr from './Components/lightninglegendscreens/Bullcrushsettscr';
-import Bullcrushinfscr from './Components/lightninglegendscreens/Bullcrushinfscr';
+import LightningLegendOnboarding from './LightningLegends/LightningLegendScreens/LightningLegendOnboarding';
+import LightningLegendMain from './LightningLegends/LightningLegendScreens/LightningLegendMain';
+import LightningLegendStats from './LightningLegends/LightningLegendScreens/LightningLegendStats';
+import LightningLegendGameplay from './LightningLegends/LightningLegendScreens/LightningLegendGameplay';
+import { ContextProvider } from './LightningLegends/LightningLegendStore/bullcrushcntx';
+import LightningLegendSettings from './LightningLegends/LightningLegendScreens/LightningLegendSettings';
+import LightningLegendInfo from './LightningLegends/LightningLegendScreens/LightningLegendInfo';
 import { NavigationContainer } from '@react-navigation/native';
 import { useEffect, useState } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
+import LightningLegendLoader from './LightningLegends/LightningLegendsComponents/LightningLegendLoader';
 
-const BullCrushNavigation = createStackNavigator();
+const Stack = createStackNavigator();
 
 const App = () => {
   const [wlcBullCrushLightningScr, setWlcBullCrushLightningScr] =
@@ -24,38 +24,38 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      <BullCrushAppContextProvider>
+      <ContextProvider>
         {!wlcBullCrushLightningScr ? (
-          <Bullcrushwlcld />
+          <LightningLegendLoade />
         ) : (
-          <BullCrushNavigation.Navigator screenOptions={{ headerShown: false }}>
-            <BullCrushNavigation.Screen
-              name="Bullcrushentrscr"
-              component={Bullcrushentrscr}
+          <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Screen
+              name="LightningLegendOnboarding"
+              component={LightningLegendOnboarding}
             />
-            <BullCrushNavigation.Screen
-              name="Bullcrushmnscr"
-              component={Bullcrushmnscr}
+            <Stack.Screen
+              name="LightningLegendMain"
+              component={LightningLegendMain}
             />
-            <BullCrushNavigation.Screen
-              name="Bullcrushsttsscr"
-              component={Bullcrushsttsscr}
+            <Stack.Screen
+              name="LightningLegendStats"
+              component={LightningLegendStats}
             />
-            <BullCrushNavigation.Screen
-              name="Bullcrushgmplscr"
-              component={Bullcrushgmplscr}
+            <Stack.Screen
+              name="LightningLegendGameplay"
+              component={LightningLegendGameplay}
             />
-            <BullCrushNavigation.Screen
-              name="Bullcrushsettscr"
-              component={Bullcrushsettscr}
+            <Stack.Screen
+              name="LightningLegendSettings"
+              component={LightningLegendSettings}
             />
-            <BullCrushNavigation.Screen
-              name="Bullcrushinfscr"
-              component={Bullcrushinfscr}
+            <Stack.Screen
+              name="LightningLegendInfo"
+              component={LightningLegendInfo}
             />
-          </BullCrushNavigation.Navigator>
+          </Stack.Navigator>
         )}
-      </BullCrushAppContextProvider>
+      </ContextProvider>
     </NavigationContainer>
   );
 };

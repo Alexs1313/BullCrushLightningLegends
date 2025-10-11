@@ -7,7 +7,7 @@ export const useBullCrushContext = () => {
   return useContext(StoreContext);
 };
 
-export const BullCrushAppContextProvider = ({ children }) => {
+export const ContextProvider = ({ children }) => {
   const [toggleBullCrushVibration, setToggleBullCrushVibration] =
     useState(false);
   const [toggleBullCrushSound, setToggleBullCrushSound] = useState(false);

@@ -2,20 +2,18 @@ import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import {
   Image,
   ImageBackground,
-  Platform,
   ScrollView,
-  StyleSheet,
   TouchableOpacity,
   View,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useBullCrushContext } from '../lightninglegendstore/bullcrushcntx';
+import { useBullCrushContext } from '../LightningLegendStore/bullcrushcntx';
 import { useCallback } from 'react';
 import Sound from 'react-native-sound';
 
 Sound.setCategory('Playback');
 
-const Bullcrushmnscr = () => {
+const LightningLegendMain = () => {
   const bullcrushnavigate = useNavigation();
   const {
     setToggleBullCrushVibration,
@@ -73,7 +71,7 @@ const Bullcrushmnscr = () => {
             style={{ zIndex: 10, marginBottom: 10 }}
             activeOpacity={0.7}
             onPress={() => {
-              bullcrushnavigate.navigate('Bullcrushgmplscr');
+              bullcrushnavigate.navigate('LightningLegendGameplay');
 
               if (toggleBullCrushSound) {
                 bullCrushClick();
@@ -86,7 +84,7 @@ const Bullcrushmnscr = () => {
             activeOpacity={0.7}
             style={{ zIndex: 10, marginBottom: 10 }}
             onPress={() => {
-              bullcrushnavigate.navigate('Bullcrushsttsscr');
+              bullcrushnavigate.navigate('LightningLegendStats');
               if (toggleBullCrushSound) {
                 bullCrushClick();
               }
@@ -105,7 +103,7 @@ const Bullcrushmnscr = () => {
               activeOpacity={0.7}
               style={{ zIndex: 10 }}
               onPress={() => {
-                bullcrushnavigate.navigate('Bullcrushsettscr');
+                bullcrushnavigate.navigate('LightningLegendSettings');
                 if (toggleBullCrushSound) {
                   bullCrushClick();
                 }
@@ -119,7 +117,7 @@ const Bullcrushmnscr = () => {
               activeOpacity={0.7}
               style={{ zIndex: 10 }}
               onPress={() => {
-                bullcrushnavigate.navigate('Bullcrushinfscr');
+                bullcrushnavigate.navigate('LightningLegendInfo');
                 if (toggleBullCrushSound) {
                   bullCrushClick();
                 }
@@ -139,20 +137,4 @@ const Bullcrushmnscr = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  bullcrushbtn: {
-    width: 195,
-    height: 73,
-    alignItems: 'center',
-    alignSelf: 'center',
-    marginBottom: 17,
-  },
-  bullcrushbtntxt: {
-    fontFamily: 'CrimsonText-Bold',
-    fontSize: 48,
-    color: '#011D92',
-    top: Platform.OS === 'android' ? -4 : 4,
-  },
-});
-
-export default Bullcrushmnscr;
+export default LightningLegendMain;

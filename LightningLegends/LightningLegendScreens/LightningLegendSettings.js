@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useBullCrushContext } from '../lightninglegendstore/bullcrushcntx';
+import { useBullCrushContext } from '../LightningLegendStore/bullcrushcntx';
 import {
   Image,
   ImageBackground,
@@ -12,7 +12,7 @@ import {
   View,
 } from 'react-native';
 
-const Bullcrushsettscr = () => {
+const LightningLegendSettings = () => {
   const bullcrushnavigate = useNavigation();
 
   const {
@@ -167,4 +167,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Bullcrushsettscr;
+export default LightningLegendSettings;
