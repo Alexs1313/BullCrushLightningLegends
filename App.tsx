@@ -26,7 +26,7 @@ const App = () => {
     <NavigationContainer>
       <ContextProvider>
         {!wlcBullCrushLightningScr ? (
-          <LightningLegendLoade />
+          <LightningLegendLoader />
         ) : (
           <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen
